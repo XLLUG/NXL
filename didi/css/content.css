@@ -1,0 +1,97 @@
+/*地图样式*/
+#map_container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/*主要内容样式*/
+.content{
+    overflow: hidden;
+    background-color: #f7f4f4;
+    padding: 10px 4px 10px 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+}
+.broadcast,.location{
+
+    background-color: #ffff;
+    padding: 8px;
+    border-radius:5%;
+    margin-bottom: 4px;
+}
+.location{
+
+}
+.select{
+    text-align: center;
+}
+.select a:first-child{
+    margin-right: 16px;
+}
+.my,.my>p{
+    width: 100%;
+}
+.from>span{
+    width: 80%;
+    border-bottom: 1px #f7f4f4 solid;
+
+}
+.from>i{
+    color: #5cb85c;
+}
+.to>i{
+    color:#ef5858;
+}
+.my span{
+    display: inline-block;
+    padding: 4px 0 4px 4px;
+}
+/*设置*/
+.setting{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
+.mask{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: #000;
+    opacity:.3;
+}
+.user_setting{
+    background-color: #ffff;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+/*用户头像*/
+.user_info{
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+}
+.img1{
+    display: inline-block;
+    background-image: url("../image/img1.png");
+    padding: 10%;
+    border-radius: 50%;
+}
+.manager{
+    margin-top: 30px;
+}
+.manager li{
+    margin-bottom: 30px;
+}

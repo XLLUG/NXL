@@ -1,0 +1,33 @@
+
+header{
+    overflow: hidden;
+    margin-top:10px;
+    text-align: center;
+}
+
+.user{
+  float:left;
+}
+.message{
+    float:right;
+}
+nav,nav ul{
+    overflow: hidden;
+    padding: 0;
+    margin-top: 4px;
+}
+nav{
+    padding-bottom: 4px;
+}
+nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+.container-fluid{
+    border-bottom: 4px #f7f4f4 solid ;
+    background-color: #ffff;
+}
+/*点击选中时的样式*/
+.curr{
+    color: #f0ad4e;
+}

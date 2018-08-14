@@ -1,0 +1,11 @@
+ul,li{
+    margin: 0 auto;
+    list-style:none;
+}
+nav,header,p{
+    margin: 0 auto;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+}
