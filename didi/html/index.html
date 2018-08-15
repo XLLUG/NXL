@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../vendor/css/normalize.css">
     <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/content.css">
 
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=QGQhSKHfunc8rujcjh2boGQO41PTyk8A">
     </script>
     <title>主页</title>
 </head>
 <body>
+<!--头部-->
 <div class="container-fluid">
     <header>
         <span class="user glyphicon glyphicon-user"></span>
@@ -32,16 +35,18 @@
         </ul>
     </nav>
 </div>
+<!--地图-->
 <div id="map_container"></div>
-<div class="content">
+<!--主页内容-->
+<div class="content" >
     <section class="broadcast" title="">
         <i class="glyphicon glyphicon-bullhorn"></i>
         你有邀约的车
     </section>
     <section class="location">
         <p class="select">
-            <a class="now"> 现在</a>
-            <a class="future">预约</a>
+            <span class="now curr"> 现在</span>
+            <span class="future">预约</span>
         </p>
         <div class="my">
             <p class="from">
@@ -53,6 +58,7 @@
         </div>
     </section>
 </div>
+<!--设置部分-->
 <div class="setting">
     <section class="user_setting">
         <div class="user_info">
@@ -79,6 +85,109 @@
     </section>
     <section class="mask"></section>
 </div>
+<!--点击信息时-->
+<div class="message_detail">
+    <section class="message_header">
+        <i class="message_back glyphicon glyphicon-menu-left"></i>
+        <span>消息</span>
+    </section>
+
+    <section class="message_content message_first">
+        <div class="tip_img glyphicon glyphicon-bullhorn "></div>
+        <div >
+            <b>活动公告<time>12:01</time></b>
+            <p>七夕免费带你“看世界”</p>
+        </div>
+    </section>
+    <section class="message_content ">
+        <div class="tip_img glyphicon glyphicon-bullhorn "></div>
+        <div >
+            <b>活动公告<time>12:01</time></b>
+            <p>七夕免费带你“看世界”</p>
+        </div>
+    </section>
+    <section class="message_content ">
+        <div class="tip_img glyphicon glyphicon-bullhorn "></div>
+        <div >
+            <b>活动公告<time>12:01</time></b>
+            <p>七夕免费带你“看世界”</p>
+        </div>
+    </section>
+    <!--<section class="message_content ">
+        <div class="tip_img glyphicon glyphicon-bullhorn "></div>
+        <div >
+            <b>活动公告<time>12:01</time></b>
+            <p>七夕免费带你“看世界”</p>
+        </div>
+    </section>-->
+    <section class="message_content ">
+        <div class="tip_img glyphicon glyphicon-bullhorn "></div>
+        <div >
+            <b>活动公告<time>12:01</time></b>
+            <p>七夕免费带你“看世界”</p>
+        </div>
+    </section>
+    <section class="message_content ">
+        <div class="tip_img glyphicon glyphicon-bullhorn "></div>
+        <div >
+            <b>活动公告<time>12:01</time></b>
+            <p>七夕免费带你“看世界”</p>
+        </div>
+    </section>
+    <section class="message_content ">
+        <div class="tip_img glyphicon glyphicon-bullhorn "></div>
+        <div >
+            <b>活动公告<time>12:01</time></b>
+            <p>七夕免费带你“看世界”</p>
+        </div>
+    </section>
+    <section class="message_content ">
+        <div class="tip_img glyphicon glyphicon-bullhorn "></div>
+        <div >
+            <b>活动公告<time>12:01</time></b>
+            <p>七夕免费带你“看世界”</p>
+        </div>
+    </section>
+    <section class="message_footer">
+        <span>历史消息</span>
+        <i class="glyphicon glyphicon-menu-right"></i>
+    </section>
+</div>
+<!--登陆页面-->
+<div class="login">
+    <section>
+        <i class="login_back glyphicon glyphicon-menu-left"></i>
+    </section>
+    <section>
+        <h3>请输入您的手机号</h3>
+        为了方便进行联系，请输入您的常用手机号码
+    </section>
+    <section class="login_tel">
+        <div class="pass_input" >
+           <span>+86&nbsp<i class="glyphicon glyphicon-triangle-bottom small"></i></span><input type="tel" name="telNumber"/>
+        </div>
+        <p class="small">手机号已不再使用&nbsp<i class="glyphicon glyphicon-menu-right"></i> </p>
+    </section>
+    <button class="btn btn-default login_next">下一步</button>
+</div>
+<!--输密码页面-->
+<div class="login_password">
+    <section>
+        <i class="pass_back glyphicon glyphicon-menu-left"></i>
+    </section>
+    <section>
+        <h3>请输入登陆密码</h3>
+    </section>
+    <section class="password" >
+        <div class="pass_input">
+          <input type="password" name="password" placeholder="8-16位密码"/>
+        </div>
+        <p class="small">忘记密码&nbsp<i class="glyphicon glyphicon-menu-right"></i> </p>
+    </section>
+    <button class="btn btn-default login_sure">确定</button>
+</div>
+<!--注册页面-->
+
 </body>
 <script type="text/javascript">
     var map = new BMap.Map("map_container");
