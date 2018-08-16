@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../vendor/css/normalize.css">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/content.css">
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>主页</title>
+</head>
+<body>
+<!--登陆页面-->
+<div class="login">
+    <section>
+        <a href="index.html"><i class="login_back glyphicon glyphicon-menu-left"></i></a>
+    </section>
+    <section>
+        <h3>请输入您的手机号</h3>
+        为了方便进行联系，请输入您的常用手机号码
+    </section>
+    <section class="login_tel">
+        <div class="pass_input" >
+            <span>+86&nbsp<i class="glyphicon glyphicon-triangle-bottom small"></i></span><input type="tel" name="telNumber"/>
+        </div>
+        <p class="small">手机号已不再使用&nbsp<i class="glyphicon glyphicon-menu-right"></i> </p>
+    </section>
+    <button class="btn btn-default login_next">下一步</button>
+</div>
+<!--输密码页面-->
+<div class="login_password">
+    <section>
+        <i class="pass_back glyphicon glyphicon-menu-left"></i>
+    </section>
+    <section>
+        <h3>请输入登陆密码</h3>
+    </section>
+    <section class="password" >
+        <div class="pass_input">
+            <input type="password" name="password" placeholder="8-16位密码"/>
+        </div>
+        <p class="small">忘记密码&nbsp<i class="glyphicon glyphicon-menu-right"></i> </p>
+    </section>
+    <button class="btn btn-default login_sure">确定</button>
+</div>
+<!--注册页面-->
+
+</body>
+<script src="../js/user.js"></script>
+</html>

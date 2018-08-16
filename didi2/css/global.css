@@ -1,0 +1,38 @@
+ul,li{
+    margin: 0 auto;
+    list-style:none;
+}
+nav,header,p{
+    margin: 0 auto;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+}
+a {
+    font-style: normal;
+    text-decoration: none;
+    color:#333;
+}
+time{
+    color: #ccc;
+}
+input{
+    text-indent: 0;
+    background: transparent;
+    border: 0 none;
+    resize:none;
+    outline:none;  /*清除选中效果的默认蓝色边框 */
+    -webkit-appearance:none;  /*清除浏览器默认的样式 */
+    line-height: normal;   //光标问题
+}
+/*input::-webkit-input-placeholder { !* WebKit browsers *!
+    line-height: 0.44rem;   //placeholder
+}*/
+input:focus {
+    color: #8b8791;
+}
+button{
+    background: transparent;
+    outline:none;
+}

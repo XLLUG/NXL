@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../vendor/css/normalize.css">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/content.css">
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=QGQhSKHfunc8rujcjh2boGQO41PTyk8A">
+    </script>
+    <title>主页</title>
+</head>
+<body>
+<!--头部-->
+<div class="container-fluid">
+    <header>
+        <span class="user glyphicon glyphicon-user"></span>
+        <span>西安市 &nbsp;<i class="glyphicon glyphicon-menu-down"></i></span>
+        <a href="message.html"><span class="message glyphicon glyphicon-envelope"></span></a>
+    </header>
+    <nav>
+        <ul>
+            <li class="curr">城际拼车</li>
+            <li>快车</li>
+        </ul>
+        <ul>
+            <li class="curr">乘客</li>
+            <li>车主</li>
+        </ul>
+    </nav>
+</div>
+<!--地图-->
+<div id="map_container"></div>
+<!--主页内容-->
+<div class="content" >
+    <section class="broadcast" title="">
+        <i class="glyphicon glyphicon-bullhorn"></i>
+        你有邀约的车
+    </section>
+    <section class="location">
+        <p class="select">
+            <span class="now curr"> 现在</span>
+            <span class="future">预约</span>
+        </p>
+        <div class="my">
+            <p class="from">
+                <i class=" glyphicon glyphicon-map-marker"></i><span>经二路</span>
+            </p>
+            <p class="to">
+                <i class="glyphicon glyphicon-map-marker"></i><span>鱼化寨</span>
+            </p>
+        </div>
+    </section>
+</div>
+<!--设置部分-->
+<div class="setting">
+    <section class="user_setting">
+        <div class="user_info">
+            <span class="img1"></span>
+            <h4>习惯才智</h4>
+            <p>铂金会员</p>
+        </div>
+        <div class="manager">
+            <ul>
+                <li>
+                    <i class="glyphicon glyphicon-list-alt"></i>&nbsp 订单
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-folder-close"></i>&nbsp 钱包
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-earphone"></i>&nbsp 客服
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-cog"></i>&nbsp 设置
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="mask"></section>
+</div>
+<!--点击信息时-->
+<!--注册页面-->
+
+</body>
+<script type="text/javascript">
+    var map = new BMap.Map("map_container");
+    // 创建地图实例
+    var point = new BMap.Point(116.404, 39.915);
+    // 创建点坐标
+    map.centerAndZoom(point, 15);
+    // 初始化地图，设置中心点坐标和地图级别
+</script>
+<script src="../js/user.js"></script>
+</html>
