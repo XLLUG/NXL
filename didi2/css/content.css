@@ -184,3 +184,16 @@
 password input{
     width: 100%;
 }
+.center {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             -ms-transform: translate(-50%,-50%);
+             -moz-transform: translate(-50%,-50%);
+             -o-transform: translate(-50%,-50%);
+             transform: translate(-50%,-50%);
+         }
+.aut{
+    width: 100%;
+    padding: 0 10%;
+}
